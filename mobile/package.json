@@ -1,0 +1,70 @@
+{
+    "name": "jcc-rescue-donated-mobile",
+    "version": "1.0.0",
+    "description": "防疫物资捐赠分发",
+    "main": "index.js",
+    "private": true,
+    "author": "JCCDex",
+    "license": "MIT",
+    "scripts": {
+        "coveralls": "cat ./coverage/lcov.info | coveralls",
+        "dev": "./dev.sh",
+        "build": "nuxt-ts build",
+        "generate": "npm run generate",
+        "start": "nuxt-ts start",
+        "test": "npm run test:unit && npm run test:e2e",
+        "test:unit": "jest",
+        "test:e2e": "nightwatch",
+        "lint": "eslint --ext .js,.vue,.ts --ignore-path .eslintignore .",
+        "lintfix": "eslint --fix --ext .js,.vue,.ts --ignore-path .eslintignore .",
+        "precommit": "npm run lint"
+    },
+    "config": {
+        "nuxt": {
+            "host": "0.0.0.0",
+            "port": 3000
+        }
+    },
+    "dependencies": {
+        "@better-scroll/core": "^2.0.0-beta.2",
+        "@nuxt/typescript-runtime": "^0.1.5",
+        "flex.css": "^1.1.7",
+        "nuxt": "^2.11.0",
+        "vant": "^2.2.0",
+        "vue-i18n": "^8.15.3",
+        "vue2-touch-events": "^2.1.0"
+    },
+    "devDependencies": {
+        "@nuxt/typescript-build": "^0.2.6",
+        "@typescript-eslint/eslint-plugin": "^2.3.0",
+        "@typescript-eslint/parser": "^2.3.0",
+        "@vue/test-utils": "^1.0.0-beta.27",
+        "babel-eslint": "^10.0.3",
+        "babel-jest": "^24.1.0",
+        "chromedriver": "^76.0.1",
+        "coveralls": "^3.0.6",
+        "cross-env": "^6.0.0",
+        "eslint": "^6.3.0",
+        "eslint-config-prettier": "^6.2.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-html": "^6.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "eslint-plugin-vue": "^5.2.3",
+        "husky": "^3.0.5",
+        "jest": "^24.1.0",
+        "nightwatch": "^1.2.2",
+        "node-sass": "^4.12.0",
+        "prettier": "^1.18.2",
+        "sass-loader": "^8.0.0",
+        "selenium-server": "^3.141.59",
+        "sinon": "^7.5.0",
+        "ts-jest": "^24.1.0",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "vue-jest": "^4.0.0-0",
+        "webpack-auto-inject-version": "^1.2.2"
+    }
+}
